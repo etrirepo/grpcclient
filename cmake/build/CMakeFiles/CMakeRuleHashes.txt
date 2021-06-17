@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+36b9302aa4793b4995c539e26ad69e1f bossopenolt.pb.cc

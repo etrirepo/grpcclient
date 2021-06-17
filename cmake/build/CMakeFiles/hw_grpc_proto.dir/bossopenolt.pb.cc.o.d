@@ -1,7 +1,7 @@
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o: \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.cc \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.cc \
  /usr/include/stdc-predef.h \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.h \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.h \
  /usr/include/c++/7/limits \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delta/grpc/examples/cpp/etri
+CMAKE_SOURCE_DIR = /home/delta/grpc/examples/cpp/grpcclient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delta/grpc/examples/cpp/etri/cmake/build
+CMAKE_BINARY_DIR = /home/delta/grpc/examples/cpp/grpcclient/cmake/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/greeter_client.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/greeter_client.dir/flags.make
 CMakeFiles/greeter_client.dir/greeter_client.cc.o: CMakeFiles/greeter_client.dir/flags.make
 CMakeFiles/greeter_client.dir/greeter_client.cc.o: ../../greeter_client.cc
 CMakeFiles/greeter_client.dir/greeter_client.cc.o: CMakeFiles/greeter_client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/greeter_client.dir/greeter_client.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/greeter_client.dir/greeter_client.cc.o -MF CMakeFiles/greeter_client.dir/greeter_client.cc.o.d -o CMakeFiles/greeter_client.dir/greeter_client.cc.o -c /home/delta/grpc/examples/cpp/etri/greeter_client.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/greeter_client.dir/greeter_client.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/greeter_client.dir/greeter_client.cc.o -MF CMakeFiles/greeter_client.dir/greeter_client.cc.o.d -o CMakeFiles/greeter_client.dir/greeter_client.cc.o -c /home/delta/grpc/examples/cpp/grpcclient/greeter_client.cc
 
 CMakeFiles/greeter_client.dir/greeter_client.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/greeter_client.dir/greeter_client.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/etri/greeter_client.cc > CMakeFiles/greeter_client.dir/greeter_client.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/grpcclient/greeter_client.cc > CMakeFiles/greeter_client.dir/greeter_client.cc.i
 
 CMakeFiles/greeter_client.dir/greeter_client.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/greeter_client.dir/greeter_client.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/etri/greeter_client.cc -o CMakeFiles/greeter_client.dir/greeter_client.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/grpcclient/greeter_client.cc -o CMakeFiles/greeter_client.dir/greeter_client.cc.s
 
 # Object files for target greeter_client
 greeter_client_OBJECTS = \
@@ -93,11 +93,10 @@ greeter_client_EXTERNAL_OBJECTS =
 greeter_client: CMakeFiles/greeter_client.dir/greeter_client.cc.o
 greeter_client: CMakeFiles/greeter_client.dir/build.make
 greeter_client: libhw_grpc_proto.a
-greeter_client: /home/delta/.local/lib/libprotobuf.a
 greeter_client: /home/delta/.local/lib/libgrpc++_reflection.a
 greeter_client: /home/delta/.local/lib/libgrpc++.a
 greeter_client: /home/delta/.local/lib/libprotobuf.a
-greeter_client: /usr/local/lib/libprotobuf.a
+greeter_client: /home/delta/.local/lib/libprotobuf.a
 greeter_client: /home/delta/.local/lib/libgrpc.a
 greeter_client: /home/delta/.local/lib/libz.a
 greeter_client: /home/delta/.local/lib/libcares.a
@@ -115,16 +114,6 @@ greeter_client: /home/delta/.local/lib/libgpr.a
 greeter_client: /home/delta/.local/lib/libupb.a
 greeter_client: /home/delta/.local/lib/libabsl_status.a
 greeter_client: /home/delta/.local/lib/libabsl_cord.a
-greeter_client: /home/delta/.local/lib/libabsl_random_distributions.a
-greeter_client: /home/delta/.local/lib/libabsl_random_seed_sequences.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_pool_urbg.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_randen.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_randen_hwaes.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_randen_hwaes_impl.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_randen_slow.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_platform.a
-greeter_client: /home/delta/.local/lib/libabsl_random_internal_seed_material.a
-greeter_client: /home/delta/.local/lib/libabsl_random_seed_gen_exception.a
 greeter_client: /home/delta/.local/lib/libabsl_str_format_internal.a
 greeter_client: /home/delta/.local/lib/libabsl_synchronization.a
 greeter_client: /home/delta/.local/lib/libabsl_stacktrace.a
@@ -148,7 +137,7 @@ greeter_client: /home/delta/.local/lib/libabsl_log_severity.a
 greeter_client: /home/delta/.local/lib/libssl.a
 greeter_client: /home/delta/.local/lib/libcrypto.a
 greeter_client: CMakeFiles/greeter_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable greeter_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable greeter_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/greeter_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -160,6 +149,6 @@ CMakeFiles/greeter_client.dir/clean:
 .PHONY : CMakeFiles/greeter_client.dir/clean
 
 CMakeFiles/greeter_client.dir/depend:
-	cd /home/delta/grpc/examples/cpp/etri/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delta/grpc/examples/cpp/etri /home/delta/grpc/examples/cpp/etri /home/delta/grpc/examples/cpp/etri/cmake/build /home/delta/grpc/examples/cpp/etri/cmake/build /home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles/greeter_client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/delta/grpc/examples/cpp/grpcclient/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delta/grpc/examples/cpp/grpcclient /home/delta/grpc/examples/cpp/grpcclient /home/delta/grpc/examples/cpp/grpcclient/cmake/build /home/delta/grpc/examples/cpp/grpcclient/cmake/build /home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles/greeter_client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/greeter_client.dir/depend
 

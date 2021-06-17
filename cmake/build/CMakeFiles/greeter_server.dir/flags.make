@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DCARES_STATICLIB
 
-CXX_INCLUDES = -I/home/delta/grpc/examples/cpp/etri/cmake/build -I/home/delta/grpc/examples/cpp/etri/../include -isystem /home/delta/.local/include
+CXX_INCLUDES = -I/home/delta/grpc/examples/cpp/grpcclient/cmake/build -I/home/delta/grpc/examples/cpp/grpcclient/../include -isystem /home/delta/.local/include
 
 CXX_FLAGS =  -std=gnu++11 -std=gnu++11
 

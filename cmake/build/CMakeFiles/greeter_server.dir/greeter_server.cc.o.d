@@ -1,5 +1,5 @@
 CMakeFiles/greeter_server.dir/greeter_server.cc.o: \
- /home/delta/grpc/examples/cpp/etri/greeter_server.cc \
+ /home/delta/grpc/examples/cpp/grpcclient/greeter_server.cc \
  /usr/include/stdc-predef.h /usr/include/c++/7/iostream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -319,8 +319,8 @@ CMakeFiles/greeter_server.dir/greeter_server.cc.o: \
  /home/delta/.local/include/grpcpp/security/authorization_policy_provider.h \
  /home/delta/.local/include/grpcpp/server_context.h \
  /home/delta/.local/include/grpcpp/server_posix.h \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.h \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.h \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.h \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.h \
  /home/delta/.local/include/google/protobuf/port_def.inc \
  /home/delta/.local/include/google/protobuf/port_undef.inc \
  /home/delta/.local/include/google/protobuf/io/coded_stream.h \

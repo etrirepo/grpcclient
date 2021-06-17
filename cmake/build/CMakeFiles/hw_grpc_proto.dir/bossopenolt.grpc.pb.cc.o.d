@@ -1,7 +1,7 @@
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o: \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.cc \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.cc \
  /usr/include/stdc-predef.h \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.h \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.h \
  /usr/include/c++/7/limits \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -229,7 +229,7 @@ CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o: \
  /home/delta/.local/include/google/protobuf/message.h \
  /home/delta/.local/include/google/protobuf/extension_set.h \
  /usr/include/c++/7/cassert \
- /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.h \
+ /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.h \
  /home/delta/.local/include/grpc/impl/codegen/port_platform.h \
  /usr/include/linux/version.h \
  /home/delta/.local/include/grpcpp/impl/codegen/async_generic_service.h \

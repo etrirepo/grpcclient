@@ -30,11 +30,11 @@ find_package(Protobuf REQUIRED)
 
 # Proto file
 get_filename_component(hw_proto "../../protos/bossopenolt.proto" ABSOLUTE)
-get_filename_component(anno_proto "../../protos/google/api/annotations.proto" ABSOLUTE)
-get_filename_component(http_proto "../../protos/google/api/http.proto" ABSOLUTE)
+#get_filename_component(anno_proto "../../protos/google/api/annotations.proto" ABSOLUTE)
+#get_filename_component(http_proto "../../protos/google/api/http.proto" ABSOLUTE)
 get_filename_component(hw_proto_path "${hw_proto}" PATH)
-get_filename_component(anno_proto_path "${anno_proto}" PATH)
-get_filename_component(http_proto_path "${http_proto}" PATH)
+#get_filename_component(anno_proto_path "${anno_proto}" PATH)
+#get_filename_component(http_proto_path "${http_proto}" PATH)
 
 # Generated sources
 set(hw_proto_srcs "${CMAKE_CURRENT_BINARY_DIR}/bossopenolt.pb.cc")
@@ -51,8 +51,8 @@ add_custom_command(
 	--include_imports
         --include_source_info
 	#	-I "${GOOGLEAPIS_DIR}"
-	-I "${anno_proto_path}"
-	-I "${http_proto_path}"
+	#	-I "${anno_proto_path}"
+	#	-I "${http_proto_path}"
         -I "${hw_proto_path}"
 	#-I /home/delta/voltha-protos/protos
 	#-I /home/delta/voltha-protos/google/api
@@ -98,14 +98,14 @@ foreach(_target
   add_executable(${_target} "${_target}.cc")
   target_link_libraries(${_target}
     hw_grpc_proto
-    grpc++
-    protobuf::libprotobuf
+    #    grpc++
+    #   protobuf::libprotobuf
     ${_REFLECTION}
     ${_GRPC_GRPCPP}
     ${_PROTOBUF_LIBPROTOBUF}
     ${PROTOBUF_LIBRARY}
     #    ${GOOGLEAPIS_DIR}
-    -lpthread
+    #    -lpthread
     )
 endforeach()
 message("   --> PROTOBUF LIB: ${PROTOBUF_LIBRARIES}")

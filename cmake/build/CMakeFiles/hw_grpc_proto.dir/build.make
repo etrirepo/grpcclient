@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/delta/grpc/examples/cpp/etri
+CMAKE_SOURCE_DIR = /home/delta/grpc/examples/cpp/grpcclient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/delta/grpc/examples/cpp/etri/cmake/build
+CMAKE_BINARY_DIR = /home/delta/grpc/examples/cpp/grpcclient/cmake/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hw_grpc_proto.dir/depend.make
@@ -70,8 +70,8 @@ include CMakeFiles/hw_grpc_proto.dir/progress.make
 include CMakeFiles/hw_grpc_proto.dir/flags.make
 
 bossopenolt.pb.cc: /home/delta/grpc/examples/protos/bossopenolt.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bossopenolt.pb.cc, bossopenolt.pb.h, bossopenolt.grpc.pb.cc, bossopenolt.grpc.pb.h"
-	/home/delta/.local/bin/protoc-3.15.8.0 --grpc_out /home/delta/grpc/examples/cpp/etri/cmake/build --cpp_out /home/delta/grpc/examples/cpp/etri/cmake/build --include_imports --include_source_info -I /home/delta/grpc/examples/protos/google/api -I /home/delta/grpc/examples/protos/google/api -I /home/delta/grpc/examples/protos --descriptor_set_out=api_descriptor.pb --plugin=protoc-gen-grpc="/home/delta/.local/bin/grpc_cpp_plugin" /home/delta/grpc/examples/protos/bossopenolt.proto
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bossopenolt.pb.cc, bossopenolt.pb.h, bossopenolt.grpc.pb.cc, bossopenolt.grpc.pb.h"
+	/home/delta/.local/bin/protoc-3.15.8.0 --grpc_out /home/delta/grpc/examples/cpp/grpcclient/cmake/build --cpp_out /home/delta/grpc/examples/cpp/grpcclient/cmake/build --include_imports --include_source_info -I /home/delta/grpc/examples/protos --descriptor_set_out=api_descriptor.pb --plugin=protoc-gen-grpc="/home/delta/.local/bin/grpc_cpp_plugin" /home/delta/grpc/examples/protos/bossopenolt.proto
 
 bossopenolt.pb.h: bossopenolt.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate bossopenolt.pb.h
@@ -85,30 +85,30 @@ bossopenolt.grpc.pb.h: bossopenolt.pb.cc
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o: CMakeFiles/hw_grpc_proto.dir/flags.make
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o: bossopenolt.grpc.pb.cc
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o: CMakeFiles/hw_grpc_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o -MF CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o.d -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o -c /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o -MF CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o.d -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o -c /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.cc
 
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.cc > CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.cc > CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.i
 
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.grpc.pb.cc -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.grpc.pb.cc -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.s
 
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o: CMakeFiles/hw_grpc_proto.dir/flags.make
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o: bossopenolt.pb.cc
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o: CMakeFiles/hw_grpc_proto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o -MF CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o.d -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o -c /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o -MF CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o.d -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o -c /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.cc
 
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.cc > CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.cc > CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.i
 
 CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/etri/cmake/build/bossopenolt.pb.cc -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/delta/grpc/examples/cpp/grpcclient/cmake/build/bossopenolt.pb.cc -o CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.s
 
 # Object files for target hw_grpc_proto
 hw_grpc_proto_OBJECTS = \
@@ -122,7 +122,7 @@ libhw_grpc_proto.a: CMakeFiles/hw_grpc_proto.dir/bossopenolt.grpc.pb.cc.o
 libhw_grpc_proto.a: CMakeFiles/hw_grpc_proto.dir/bossopenolt.pb.cc.o
 libhw_grpc_proto.a: CMakeFiles/hw_grpc_proto.dir/build.make
 libhw_grpc_proto.a: CMakeFiles/hw_grpc_proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libhw_grpc_proto.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libhw_grpc_proto.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/hw_grpc_proto.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hw_grpc_proto.dir/link.txt --verbose=$(VERBOSE)
 
@@ -138,6 +138,6 @@ CMakeFiles/hw_grpc_proto.dir/depend: bossopenolt.grpc.pb.cc
 CMakeFiles/hw_grpc_proto.dir/depend: bossopenolt.grpc.pb.h
 CMakeFiles/hw_grpc_proto.dir/depend: bossopenolt.pb.cc
 CMakeFiles/hw_grpc_proto.dir/depend: bossopenolt.pb.h
-	cd /home/delta/grpc/examples/cpp/etri/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delta/grpc/examples/cpp/etri /home/delta/grpc/examples/cpp/etri /home/delta/grpc/examples/cpp/etri/cmake/build /home/delta/grpc/examples/cpp/etri/cmake/build /home/delta/grpc/examples/cpp/etri/cmake/build/CMakeFiles/hw_grpc_proto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/delta/grpc/examples/cpp/grpcclient/cmake/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/delta/grpc/examples/cpp/grpcclient /home/delta/grpc/examples/cpp/grpcclient /home/delta/grpc/examples/cpp/grpcclient/cmake/build /home/delta/grpc/examples/cpp/grpcclient/cmake/build /home/delta/grpc/examples/cpp/grpcclient/cmake/build/CMakeFiles/hw_grpc_proto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hw_grpc_proto.dir/depend
 
